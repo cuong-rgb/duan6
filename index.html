@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Tbbai5 tr {
+            position: relative;
+        }
+
+        .Tbbai5 tr td:nth-child(1){
+            width: 200px;
+        }
+
+        .Tbbai5 tr td:nth-child(1) label{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .tbbai6 td {
+            border: 1px dashed black;
+        }
+        .tbbai6 td:nth-child(1) {
+            border-left: none;
+        }
+        .tbbai6 tr:nth-child(1) td:last-child,
+        .tbbai6 tr:nth-child(2) td:last-child,
+        .tbbai6 tr:nth-child(3) td:last-child,
+        .tbbai6 tr:nth-child(4) td:last-child,
+        .tbbai6 tr:nth-child(5) td:last-child,
+        .tbbai6 tr:nth-child(6) td:last-child{
+            border-right: none;
+        }
+
+        .tbbai6 td:nth-child(3){
+            width: 80px;
+        }
+
+        .tbbai6 td input{
+            width: 35%;
+        }
+        .tbbai6 td img{
+            width: 100px;
+        }
+
+        .tbbai6 tr:nth-child(1){
+            color: rgb(146, 17, 146);
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- bai 1 -->
+    <form  style="border: 1px solid ; width: 356px; text-align: left;">
+        <label style="display: block; font-size: 32px; margin: 10px 8px 0;"><b>APPLICATION FORM</b></label><br>
+        <div style="padding:  8px; display: flex;">
+            <div >
+                <label for="firstName"> First Name</label><br><br>
+                <div style="width: 1px; height: 7px;"></div>
+                <label>Education</label><br><br>
+                <label >Gender</label><br><br>
+                <label for="salary">Salary</label><br><br><br><br><br><br><br><br><br><br>
+                <label for="remark">Remarks</label><br><br>
+                <label for="coutry">Coutry</label>
+            </div>
+            <div style="margin-left: 10px;">
+                <input id="firstName" type="text" style="width: 240px;" ><br><br>
+                <input style="margin: 0;" type="checkbox" id="graduate" name="education" value="graduate">
+                <label for="graduate">Graduate</label>
+                <input type="checkbox" id="post-graduate" name="education" value="post graduate">
+                <label for="post-graduate">Post Graduate</label><br><br>
+                <input style="margin: 0;" type="radio" name="gender" id="male" value="male" >
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female" >
+                <label for="female">Female</label><br><br>
+                <input type="text" id="salary" style="width: 100px;"><br><br>
+                <textarea name="remark" id="remark" cols="30" rows="10" placeholder="Type your text here"></textarea><br><br>
+                <select name="coutry" id="coutry">
+                    <option value="VietNam">Việt Nam</option>
+                    <option value="USA" selected>USA</option>
+                    <option value="Duc">Đức</option>
+                </select>
+            </div>
+        </div>
+        <div style="padding: 8px; ">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button><br><br>
+        </div>
+    </form>
+    <br><br>
+
+    <!-- bài 2 -->
+    <form  style="border: 1px solid ; width: 430px; text-align: left;">
+        <label style="display:block; font-size: 20px; margin: 10px 8px 0; color: green;"><b>APPLICATION FORM</b></label><br>
+        <div style="width: calc(100% - 20px); border: 1px solid #333; margin-left: 8px"></div><br>
+        <div style="padding: 0 8px 15px;">
+            <label for="name">Name</label>
+            <input type="text" style="width: 180px;"><br><br>
+            <label>Area of Internets</label><br><br>
+            <input type="radio" id="web-designer" name="Area-of-Internets" value="web-designer">
+            <label for="web-designer">Web Designer</label>
+            <input type="radio" id="web-administrator" name="Area-of-Internets" value="web-administrator">
+            <label for="web-administrator">Web Administrator</label>
+            <input type="radio" id="web-developer" name="Area-of-Internets" value="web-developer">
+            <label for="web-developer">Web Developer</label><br><br>
+
+            <label>Experience</label>
+            <input list="exp" name = "exp" style="width: 70px;">
+            <datalist id = "exp">
+                <option value="None" selected></option>
+                <option value="3 year">(3 năm kinh nghiệm)</option>
+                <option value="4 year">(4 năm kinh nghiệm)</option>
+                <option value="5 year">(5 năm kinh nghiệm)</option>
+            </datalist>
+            <br><br>
+            <label for="comments">Comments</label><br>
+            <textarea name="comments" id="" cols="30" rows="8" placeholder="Type your text here"></textarea><br><br>
+            <input type="checkbox">
+            <label > Send Acknowledgement</label><br><br>
+            <button>OK</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    <br><br>
+
+    <!-- Bài 3 -->
+    <form >
+        <div style="text-align: center; width: 680px; border: 1px solid black;">
+            <div>
+                <H2>Interview Feedback</H2>
+                <p><b>This type of form maybe an easy way to consolidate/standardize feedback on interview cadidates.</b></p>
+                <label for="candidate-name"><b>Candidate Name:</b></label>
+                <input type="text" id="candidate-name" style="width: 100px;">
+                <label for="candidate-name"><b>Post applied for:</b></label>
+                <input type="text" id="candidate-name" style="width: 100px;">
+            </div>  
+            <br>
+            <div style="display: flex; align-items: flex-start; justify-content: center;">
+                <div>
+                    <label for="edu-level"><b>Education Level</b></label><br>
+                    <select name="edu-level" id="edu-level">
+                        <option value="hight">1&#10089 Hight School</option>
+                        <option value="bachelors">2&#10089 Bachelors Degree</option>
+                        <option value="master">3&#10089 Master Degree</option>
+                        <option value="doctoral">4&#10089 Doctoral Degree</option>
+                        <option value="professional">5&#10089 Professional Centification</option>
+                    </select>
+                </div>
+                <div style="text-align: left;">
+                    <label><b>Candidate is a good fit for the position</b></label><br>
+                    <input type="radio" name="option" id="agree" value="agree">
+                    <label for="agree">Agree</label><br>
+                    <input type="radio" name="option" id="somewhat-agree" value="somewhat-agree">
+                    <label for="somewhat-agree">Somewhat Agree</label><br>
+                    <input type="radio" name="option" id="neutral" value="neutral">
+                    <label for="neutral">Neutral</label><br>
+                    <input type="radio" name="option" id="somewhat-disagree" value="somewhat-disagree">
+                    <label for="somewhat-disagree">Somewhat Disagree</label><br>
+                    <input type="radio" name="option" id="disagree" value="disagree">
+                    <label for="disagree">Disagree</label>
+                </div>
+            </div>
+            <br>
+            <div>
+                <label><b>Should we hire this candidate?</b></label>
+                <input type="radio" name="decision" id="yes" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="decision" id="no" value="no">
+                <label for="no">No</label>
+                <br><br>
+                <label for="comments"><b>Comments</b></label>
+                <textarea name="comments" id="comments" cols="30" rows="7" style="resize: none;"></textarea>
+            </div>
+            <br>
+            <button type="submit" style="margin: 0 0 8px;">Submit</button>
+        </div>
+    </form>
+    <br><br>
+
+    <!-- bài 4 -->
+    <form >
+        <div style="width: 500px; border: 1px solid black; padding: 8px;">
+            <h2 style="text-align: center;">Sample Stock Survey</h2>
+            <label><b>Describe your investment experience</b></label><br><br>
+            <input type="radio" name="exp" id="beginer" value="beginer">
+            <label for="beginer">Beginer</label>
+            <input type="radio" name="exp" id="intermediate" value="intermediate">
+            <label for="intermediate">Intermediate</label>
+            <input type="radio" name="exp" id="expert" value="expert">
+            <label for="expert">Expert</label>
+            <br><br>
+            <label><b>Types of Investment you make</b></label><br><br>
+            <input type="checkbox" name="types" id="Individual-Stocks" value="Individual-Stocks">
+            <label for="Individual-Stocks">Individual Stocks</label>
+            <input type="checkbox" name="types" id="Options" value="Options">
+            <label for="Options">Options</label>
+            <input type="checkbox" name="types" id="Mutual-Funds" value="Mutual-Funds">
+            <label for="Mutual-Funds">Mutual Funds</label>
+            <br><br>
+            <label for="How-buy"><b>How do you buy your stocks?</b></label> 
+            <select name="How-buy" id="How-buy">
+                <option value="online">1&#10089 On-line</option>
+                <option value="trading">2&#10089 Touch Tone Trading</option>
+                <option value="assisted">3&#10089 Broker Assisted</option>
+                <option value="other">4&#10089 Other</option>
+            </select>
+            <br><br>
+            <label for="What"><b>What is your hot stock pick for ...?</b></label> 
+            <input type="text" name="What" id="What">
+            <br><br>
+            <label for=""><b>Any Investment advice for orther ?</b></label>
+            <select name="" id="" multiple style="width: 200px;">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    <br><br>
+    
+    <!-- bài 5 -->
+    <form >
+        <div style="width: 900px; border: 4px solid rgb(92, 6, 6);">
+            <div style="background-color: rgb(17, 199, 17);">
+                <p style="color: white; margin: 0;">Set the duration and price</p>
+                <div style="width: 100%; height: 4px; background-color: rgb(4, 68, 4);"></div>
+            </div>
+            <table  class="Tbbai5">
+                <tr>
+                    <td>                        
+                        <label for=""><b>&#10173 Start Time<sup style="color: red;">*</sup></b></label>                            
+                    </td>
+                    <td>
+                        <div >
+                            <input type="number" style="width: 35px;">
+                            <input type="date">
+                            <input type="time">
+                            <p style="margin: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ratione ipsum rem aliquid cum deserunt magni ut minus ad pariatur.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>&#10173 End Time<sup style="color: red;">*</sup></b></label></td>
+                    <td>
+                        <input type="number" style="width: 35px;">
+                        <input type="date">
+                        <input type="time">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>&#10173 Currency<sup style="color: red;">*</sup></b></label></td>
+                    <td>
+                        <input type="number" style="width: 55px;">
+                        <label for="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>&#10173 Start Price<sup style="color: red;">*</sup></b></label></td>
+                    <td>
+                        <input type="text" style="width: 95px;">
+                        <label for="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ratione </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>&#10173 Reserve Price</b></label></td>
+                    <td>
+                        <label for="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label><br>
+                        <input type="text" style="width: 95px;">
+                        <label for="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ratione Sint ratione </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>&#10173 Bid incremeat<sup style="color: red;">*</sup></b></label></td>
+                    <td>
+                        <input type="text" style="width: 95px;">
+                        <label for="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>&#10173 Quantity</b></label></td>
+                    <td>
+                        <label for="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label><br>
+                        <input type="text" style="width: 55px;">
+                        <label for="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ratione</label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>&#10173 Quantity Perlot<sup style="color: red;">*</sup></b></label></td>
+                    <td>
+                        <input type="text" style="width: 95px;">
+                        <p style="margin: 0;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nam adipisci libero sapiente numquam dolor? Quis recusandae nisi, sit quos eveniet libero. Quo, dolorum autem eaque obcaecati voluptatibus neque suscipit.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <br><br>
+    <!-- bài 6 -->
+    <form>
+        <div style="width: 900px; border-right: 1px dashed rgb(213, 23, 23); border-left: 1px dashed rgb(213, 23, 23); text-align: center;">
+            <h1 style="color: rgb(137, 9, 137);">My Shopping Cart</h1>
+            <table class="tbbai6" style="border-collapse: collapse; width: 100%;">
+                <tr>
+                    <td colspan="2">Title</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                    <td>Action</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="padding: 5px; color: rgb(69, 69, 246); font-weight: 800;"> Four Items were added to your shopping cart</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="padding: 10px 2px;">
+                        <div style="height: 2px; background-color: #333;"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../12522013_NguyenVanCuong_Bài tập buổi 3/Screenshot 2024-04-23 153422.png" alt=""></td>
+                    <td>Software developement for engineers</td>
+                    <td>
+                        <label for="save1">Save:</label>
+                        <input id="save1" type="number" value="1">
+                    </td>
+                    <td>$98.00</td>
+                    <td>
+                        <button>Save</button><br>
+                        <button>Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../12522013_NguyenVanCuong_Bài tập buổi 3/Screenshot 2024-04-23 153422.png" alt=""></td>
+                    <td>The everything computer book</td>
+                    <td>
+                        <label for="save1">Save:</label>
+                        <input id="save1" type="number" value="1">
+                    </td>
+                    <td>$9.32</td>
+                    <td>
+                        <button>Save</button><br>
+                        <button>Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../12522013_NguyenVanCuong_Bài tập buổi 3/Screenshot 2024-04-23 153422.png" alt=""></td>
+                    <td>Goodnight moon</td>
+                    <td>
+                        <label for="save1">Save:</label>
+                        <input id="save1" type="number" value="1">
+                    </td>
+                    <td>$10.07</td>
+                    <td>
+                        <button>Save</button><br>
+                        <button>Details</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+</body>
+</html>
